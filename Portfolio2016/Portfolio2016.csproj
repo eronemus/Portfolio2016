@@ -196,12 +196,17 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CommentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PostsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CodeFirst\Comment.cs" />
+    <Compile Include="Models\CodeFirst\Post.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -210,11 +215,35 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\freelancer.css" />
+    <Content Include="css\freelancer.min.css" />
+    <Content Include="css\mystyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="gulpfile.js" />
+    <Content Include="img\portfolio\abstract-aqua-background-blue-87825.jpeg" />
+    <Content Include="img\portfolio\cabin.png" />
+    <Content Include="img\portfolio\cake.png" />
+    <Content Include="img\portfolio\car.jpeg" />
+    <Content Include="img\portfolio\chalk.jpg" />
+    <Content Include="img\portfolio\circus.png" />
+    <Content Include="img\portfolio\computer.jpg" />
+    <Content Include="img\portfolio\earth.jpg" />
+    <Content Include="img\portfolio\game.png" />
+    <Content Include="img\portfolio\lightbulb.jpeg" />
+    <Content Include="img\portfolio\piggy.jpg" />
+    <Content Include="img\portfolio\safe.png" />
+    <Content Include="img\portfolio\submarine.png" />
+    <Content Include="img\profile2.jpg" />
+    <Content Include="js\contact_me.js" />
+    <Content Include="js\freelancer.js" />
+    <Content Include="js\freelancer.min.js" />
+    <Content Include="js\jqBootstrapValidation.js" />
+    <Content Include="js\jquery-3.1.0.js" />
+    <Content Include="js\scriptsite1.js" />
     <Content Include="personal_site.html" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
@@ -224,6 +253,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="package.json" />
+    <Content Include="ExternalFiles\MS Science Ronemus Emily updated.pdf" />
+    <None Include="Properties\PublishProfiles\eronemus %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\eronemus %283%29.pubxml" />
+    <None Include="Properties\PublishProfiles\eronemus.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -257,8 +290,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -317,13 +348,23 @@
     <Content Include="vendor\font-awesome\scss\_screen-reader.scss" />
     <Content Include="vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="Views\Home\Portfolio.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Posts\Create.cshtml" />
+    <Content Include="Views\Posts\Delete.cshtml" />
+    <Content Include="Views\Posts\Details.cshtml" />
+    <Content Include="Views\Posts\Edit.cshtml" />
+    <Content Include="Views\Posts\Index.cshtml" />
+    <Content Include="Views\Comments\Create.cshtml" />
+    <Content Include="Views\Comments\Delete.cshtml" />
+    <Content Include="Views\Comments\Details.cshtml" />
+    <Content Include="Views\Comments\Edit.cshtml" />
+    <Content Include="Views\Comments\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="css\" />
     <Folder Include="fonts\mail\" />
-    <Folder Include="img\" />
-    <Folder Include="js\" />
     <Folder Include="less\" />
   </ItemGroup>
   <ItemGroup>

@@ -26,5 +26,10 @@ namespace Portfolio2016.Controllers
 
             return View();
         }
+        public ActionResult Portfolio()
+        {
+            return View();
+        }
+       
     }
 }

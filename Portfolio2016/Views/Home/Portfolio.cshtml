@@ -1,0 +1,201 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/mystyle.css">
+</head>
+<body>
+    <div> 
+        <section id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Portfolio</h2>
+                        <hr class="star-primary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <h3>Javascript Exercises</h3>
+                                </div>
+                            </div>
+                            <img src="~/img/portfolio/computer.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                   <h3>Coming Soon</h3>
+                                </div>
+                            </div>
+                            <img src="~/img/portfolio/piggy.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="" class="portfolio-link" data-target="#portfolioModal1" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <h3>Coming Soon</h3>
+                                </div>
+                            </div>
+                            <img src="~/img/portfolio/car.jpeg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    </div>
+                <div class="row">
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <h3>Coming Soon</h3>
+                                </div>
+                            </div>
+                            <img src="~/img/portfolio/lightbulb.jpeg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <h3>Coming Soon</h3>
+                                </div>
+                            </div>
+                            <img src="~/img/portfolio/chalk.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <h3>Coming Soon</h3>
+                                </div>
+                            </div>
+                            <img src="" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col--6 col-lg-offset-2">
+                        <div class="modal-body">
+
+                            <h2>Javascript Exercises </h2>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 well">
+                                        <h2>Number Magic</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>Choose Five Numbers:</h3>
+                            <div id="calculator">
+                                <input type="text" id="input" /><br>
+                                <input type="text" id="input2" /><br>
+                                <input type="text" id="input3" /><br>
+                                <input type="text" id="input4" /><br>
+                                <input type="text" id="input5" /><br>
+
+                                <button id="mybutton">Click Me</button>
+
+
+
+                                <div id="output">
+                                    Lowest Number: <div id="lowest"></div><br>
+                                    Greatest Number: <div id="greatest"></div><br>
+                                    Mean: <div id="mean"></div><br>
+                                    Sum: <div id="sum"></div><br>
+                                    Product: <div id="product"></div><br>
+
+                                </div>
+                            </div>
+
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 well">
+                                        <h2>Factoral Fun</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <h3>Enter Your Number Here:</h3>
+                            </div>
+
+                            <div>
+                                <input type="text" id="inputs2" />
+                                <button id="mybuttons2">Submit</button>
+                            </div>
+
+                            <div id="outputs2">
+                                Factoral: <div id="factoral"></div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 well">
+                                    <h2>Fizz Buzz</h2>
+                             </div>
+                         </div>
+                     </div>
+
+                            <h3>Input your numbers here:</h3>
+                            <input type="text" id="inputs3" /><br>
+                            <input type="text" id="inputs3_2" /><br>
+                            <button id="mybuttons3">Submit</button>
+                            <div id=outputs3></div>
+
+                        </div>
+
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 well">
+                            <h2>Palindrome Pal</h2>
+                        </div>
+                    </div>
+                </div>
+                            <h3>Enter Your Word Here:</h3>
+
+                            <input type="text" id="inputs4" /><br>
+                            <button id="mybuttons4">Submit</button>
+
+                            <div id="outputs4"> </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/jquery-3.1.0.js"></script>
+    <script src="~/js/scriptsite1.js"></script>
+</body>
+</html>
