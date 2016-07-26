@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-Portfolio2016-20160712100221.mdf;Initial Catalog=aspnet-Portfolio2016-20160712100221;Integrated Security=True" tags="SqlConnectionString">
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=coderfoundry.cloudapp.net,55555;Initial Catalog=eronemus-portfolio;Integrated Security=False;User ID=eronemus;Password=Coderfoundry123;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\Users\\emily1\.ronemus\\Documents\\Visual\ Studio\ 2015\\Projects\\Portfolio2016\\Portfolio2016\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
 </parameters>

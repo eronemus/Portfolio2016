@@ -268,6 +268,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\tinymce\jquery.tinymce.min.js" />
+    <Content Include="Scripts\tinymce\license.txt" />
+    <Content Include="Scripts\tinymce\tinymce.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="vendor\bootstrap\css\bootstrap.css" />
     <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
@@ -366,6 +369,10 @@
     <Folder Include="App_Data\" />
     <Folder Include="fonts\mail\" />
     <Folder Include="less\" />
+    <Folder Include="Scripts\tinymce\langs\" />
+    <Folder Include="Scripts\tinymce\plugins\" />
+    <Folder Include="Scripts\tinymce\skins\" />
+    <Folder Include="Scripts\tinymce\themes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

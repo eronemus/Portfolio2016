@@ -17,7 +17,9 @@ namespace Portfolio2016.Controllers
         // GET: Posts
         public ActionResult Index()
         {
-            return View(db.Posts.ToList());
+            var newPost = db.Posts.OrderByDescending(p => p.Created).ToList();
+            return View(newPost);
+            //return View(db.Posts.ToList());
         }
 
         // GET: Posts/Details/5
@@ -36,6 +38,7 @@ namespace Portfolio2016.Controllers
         }
 
         // GET: Posts/Create
+        [Authorize(Roles ="Admin")]
         public ActionResult Create()
         {
             return View();
@@ -48,17 +51,25 @@ namespace Portfolio2016.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Created,Updated,Title,Slug,Body,MediaURL,Published")] Post post)
         {
+            
+
             if (ModelState.IsValid)
             {
+                post.Created = DateTime.Now;
                 db.Posts.Add(post);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            return view(post);
+        }
 
-            return View(post);
+        private ActionResult view(Post post)
+        {
+            throw new NotImplementedException();
         }
 
         // GET: Posts/Edit/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -90,6 +101,7 @@ namespace Portfolio2016.Controllers
         }
 
         // GET: Posts/Delete/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(int? id)
         {
             if (id == null)

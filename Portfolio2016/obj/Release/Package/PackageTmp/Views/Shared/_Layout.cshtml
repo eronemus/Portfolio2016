@@ -1,4 +1,4 @@
-﻿!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -47,6 +47,15 @@
                     </li>
                     <li class="page-scroll">
                         <a href="@Url.Action("Contact","Home")">Contact</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="@Url.Action("Index","Posts")">Blog</a>
+                    </li>
+                    @*<li class="page-scroll">
+                        <a href="@Url.Action("Login","Account")">Log In</a>
+                    </li>*@
+                    <li>
+                        @Html.Partial("_LoginPartial")
                     </li>
                 </ul>
             </div>
@@ -118,5 +127,7 @@
     <script src="~/js/contact_me.js"></script>
     <!-- Theme JavaScript -->
     <script src="~/js/freelancer.min.js"></script>
-</body>
-</html>
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    
+
+@RenderSection("scripts", required: false)
