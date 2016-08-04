@@ -40,6 +40,8 @@ C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Port
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\Newtonsoft.Json.dll
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\Owin.dll
+C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\PagedList.dll
+C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\PagedList.Mvc.dll
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\System.Web.Helpers.dll
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\System.Web.Mvc.dll
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\System.Web.Optimization.dll
@@ -54,6 +56,8 @@ C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Port
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\Microsoft.ApplicationInsights.xml
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\PagedList.xml
+C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\PagedList.Mvc.xml
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\System.Web.Helpers.xml
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\System.Web.Mvc.xml
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\System.Web.Optimization.xml
@@ -77,6 +81,6 @@ C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Port
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\obj\Release\Portfolio2016.csprojResolveAssemblyReference.cache
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\obj\Release\Portfolio2016.dll
 C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\obj\Release\Portfolio2016.pdb
-C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\obj\Release\Portfolio2016.csprojResolveAssemblyReference.cache

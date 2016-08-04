@@ -80,3 +80,7 @@ c:\users\emily1.ronemus\documents\visual studio 2015\Projects\Portfolio2016\Port
 c:\users\emily1.ronemus\documents\visual studio 2015\Projects\Portfolio2016\Portfolio2016\obj\Debug\Portfolio2016.csprojResolveAssemblyReference.cache
 c:\users\emily1.ronemus\documents\visual studio 2015\Projects\Portfolio2016\Portfolio2016\obj\Debug\Portfolio2016.dll
 c:\users\emily1.ronemus\documents\visual studio 2015\Projects\Portfolio2016\Portfolio2016\obj\Debug\Portfolio2016.pdb
+C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\PagedList.dll
+C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\PagedList.Mvc.dll
+C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\PagedList.xml
+C:\Users\emily1.ronemus\Documents\Visual Studio 2015\Projects\Portfolio2016\Portfolio2016\bin\PagedList.Mvc.xml

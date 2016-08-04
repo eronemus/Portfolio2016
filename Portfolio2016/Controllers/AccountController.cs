@@ -12,6 +12,7 @@ using Portfolio2016.Models;
 
 namespace Portfolio2016.Controllers
 {
+    [RequireHttps]
     [Authorize]
     public class AccountController : Controller
     {

@@ -1,5 +1,6 @@
 ﻿@model Portfolio2016.Models.Post
 
+
 @{
     ViewBag.Title = "Details";
 }
@@ -13,6 +14,13 @@
 
 <div>
     <h4>Post</h4>
+
+    @if (Model.MediaURL != null)
+    {
+
+    <img class="img-responsive" src="@Model.MediaURL" alt="">
+    <hr>
+    }
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -73,10 +81,59 @@
 
     </dl>
 </div>
+
+
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+
+@using (Html.BeginForm("Create", "Comments", FormMethod.Post))
+
+{
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="PostId" value="@Model.Id" />
+   <div>
+        <label for="comment-new_textarea" class="sr-only">Enter your comment</label>
+        <textarea class="form-control" rows="2" name="Body" id="body" placeholder = "Enter your comment"></textarea>
+   </div>
+   
+       <button type="submit" class="btn btn-primary">Send Comment</button>
+   
+}
+
+
+   @foreach (var item in Model.Comments)
+   {
+   
+        
+           <h6>@Html.DisplayFor(modelItem => item.Author.Email)</h6>
+      
+       
+          <h6>@Html.DisplayFor(modelItem => item.Post.Title)</h6>
+     
+        <p>
+            @Html.DisplayFor(modelItem => item.Body)
+        </p>
+        <h6>
+            @Html.DisplayFor(modelItem => item.Created)
+        </h6>
+        <h6>
+            @Html.DisplayFor(modelItem => item.Updated)
+        </h6>
+        <h6>
+            @Html.DisplayFor(modelItem => item.UpdateReason)
+        </h6>
+      
+         if (Request.IsAuthenticated)
+       {
+        <p>
+            @Html.ActionLink("Edit", "Edit", "Comments", new { id = item.Id }, null) |
+            @Html.ActionLink("Delete", "Delete", "Comments", new { id = item.Id }, null)
+        </p>
+       }
+   }
 <br />
 <br />
 <br />

@@ -25,4 +25,6 @@ namespace Portfolio2016.Models
         public bool Published { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
     }
+
+    
 }

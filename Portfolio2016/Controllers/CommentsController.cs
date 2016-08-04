@@ -10,6 +10,7 @@ using Portfolio2016.Models;
 
 namespace Portfolio2016.Controllers
 {
+    [RequireHttps]
     public class CommentsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -37,10 +38,11 @@ namespace Portfolio2016.Controllers
         }
 
         // GET: Comments/Create
-        public ActionResult Create()
+        [Authorize]
+        public ActionResult Create(int? id)
         {
             //ViewBag.AuthorId = new SelectList(db.ApplicationUsers, "Id", "FirstName");
-            ViewBag.PostId = new SelectList(db.Posts, "Id", "Title");
+            ViewBag.PostId = id;
             return View();
         }
 
@@ -49,13 +51,16 @@ namespace Portfolio2016.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Create([Bind(Include = "Id,PostId,AuthorId,Body,Created,Updated,UpdateReason")] Comment comment)
         {
             if (ModelState.IsValid)
             {
+                var post = db.Posts.Find(comment.PostId);
+               comment.Created = DateTime.Now;
                 db.Comments.Add(comment);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", "Posts", new { slug = post.Slug });
             }
 
             //ViewBag.AuthorId = new SelectList(db.ApplicationUsers, "Id", "FirstName", comment.AuthorId);
@@ -64,6 +69,8 @@ namespace Portfolio2016.Controllers
         }
 
         // GET: Comments/Edit/5
+        [Authorize(Roles = "Admin, Moderator")]
+
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -89,9 +96,10 @@ namespace Portfolio2016.Controllers
         {
             if (ModelState.IsValid)
             {
+                var post = db.Posts.Find(comment.PostId);
                 db.Entry(comment).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", "Posts", new { slug = post.Slug });
             }
             //ViewBag.AuthorId = new SelectList(db.ApplicationUsers, "Id", "FirstName", comment.AuthorId);
             ViewBag.PostId = new SelectList(db.Posts, "Id", "Title", comment.PostId);
@@ -99,6 +107,8 @@ namespace Portfolio2016.Controllers
         }
 
         // GET: Comments/Delete/5
+        [Authorize(Roles = "Admin, Moderator")]
+      
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -118,10 +128,12 @@ namespace Portfolio2016.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
+            
             Comment comment = db.Comments.Find(id);
+            var post = db.Posts.Find(comment.PostId);
             db.Comments.Remove(comment);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Details", "Posts", new { slug = post.Slug });
         }
 
         protected override void Dispose(bool disposing)

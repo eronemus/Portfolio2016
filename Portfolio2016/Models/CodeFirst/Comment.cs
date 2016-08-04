@@ -14,6 +14,7 @@ namespace Portfolio2016.Models
         public DateTimeOffset Created { get; set; }
         public DateTimeOffset? Updated { get; set; }
         public string UpdateReason { get; set; }
+
         public virtual ApplicationUser Author { get; set; }
         public virtual Post Post { get; set; }
     }
